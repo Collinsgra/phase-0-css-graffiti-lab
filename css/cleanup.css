@@ -1,1 +1,68 @@
 /* write your override styles here */
+/* Override Background */
+body {
+    background: black url(../images/sketch.jpg) no-repeat center !important;
+    background-size: cover !important;
+  }
+  
+  /* Override Wall */
+  #wall {
+    margin: 30px auto !important;
+    width: 980px !important;
+    height: 622px !important;
+    box-shadow: 10px 10px 40px lime, -10px -10px 40px aqua !important;
+    border: 12px solid white !important;
+    border-bottom: 55px solid white !important;
+  }
+  
+  /* Override Tags */
+  .tag-1, #tag-2, #tag-3, #tag-4, #tag-5, #tag-6, #tag-7 {
+    opacity: 0.95 !important;
+    filter: brightness(1.1) !important;
+  }
+  
+  /* Adjust Individual Tags */
+  .tag-1 {
+    z-index: 8 !important;
+  }
+  
+  #wall #tag-2 {
+    z-index: 7 !important;
+  }
+  
+  div#wall #tag-3.slick {
+    z-index: 6 !important;
+  }
+  
+  #wall #tag-4 {
+    z-index: 5 !important;
+  }
+  
+  div#wall .parent #tag-5.slick {
+    z-index: 4 !important;
+  }
+  
+  div#wall div.parent div:last-child div#tag-6 {
+    z-index: 3 !important;
+  }
+  
+  body div#wall div.parent div > #tag-7.slick {
+    z-index: 2 !important;
+  }
+  
+  /* Additional Customizations */
+  #wall div {
+    transition: all 0.2s ease-in-out !important;
+  }
+  
+  .tag-1:hover,
+  #tag-2:hover,
+  #tag-3:hover,
+  #tag-4:hover,
+  #tag-5:hover,
+  #tag-6:hover,
+  #tag-7:hover {
+    transform: scale(1.02) !important;
+    filter: contrast(1.1) !important;
+  }
+  
